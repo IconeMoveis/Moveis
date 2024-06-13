@@ -341,45 +341,52 @@ header {
 /* Estilo para o formulário de contato */
 #contact {
     background-color: #F2F2F2;
-    padding: 40px 0;
+    padding: 60px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    flex-direction: column;
 }
 
-.container {
-    max-width: 900px;
+.container1 {
+    max-width: 800px;
     width: 100%;
-    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .section-header {
+    margin-bottom: 20px;
     text-align: center;
-    margin-bottom: 40px;
 }
 
 .section-title {
-    
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
     color: #000;
 }
 
+.section-header p {
+    font-size: 18px;
+    color: #4e4e4e;
+}
+
 .form {
-    background: #fff;
+    background: #8a87874d;
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 19px rgba(61, 61, 61, 0.726);
 }
 
 .form-control {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #333131d3;
     border-radius: 5px;
     margin-bottom: 20px;
+    box-shadow: 1px 1px 9px rgba(73, 72, 72, 0.527);
 }
 
 .form-group {
@@ -397,10 +404,13 @@ textarea.form-control {
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
+    box-shadow: 1px 1px 9px rgba(73, 72, 72, 0.527);
+    width: 150px;
+    text-align: center;
 }
 
 .btn-success:hover {
-    background-color: #218838;
+    background-color: #104d1d;
 }
 
 #sendmessage, #errormessage {
@@ -452,17 +462,36 @@ textarea.form-control {
 }
 
 
-#stores .store-locations {
-    display: flex;
-    justify-content: space-around;
+#stores {  
+    display: flex; /* Usa flexbox para alinhar os itens */
+    justify-content: space-between; /* Distribui os itens com espaçamento entre eles */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    padding: 20px;   
+    background-color: #F2F2F2;   
+}
+.store1, .store {
+    flex: 1; /* Faz com que os itens ocupem a mesma quantidade de espaço */
+    margin: 0 10px; /* Margem entre os itens */
+    padding: 10px; /* Preenchimento interno dos itens */
+    /* Outros estilos opcionais */
 }
 
-#stores .store {
-    width: 45%;
+.store {
+    text-align: center;
+    align-items: center;
+    
+}
+.store1 {
+    
+}
+.store h3 {
+    font-size: 1.2em;
+    color: #333;
+   
 }
 
 footer {
-    background-color: #333;
+    background-color: #333333;
     color: #fff;
     text-align: center;
     padding: 10px 0;
